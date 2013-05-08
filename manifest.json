@@ -6,5 +6,8 @@
 	  "css": [ "css/t-scroll-bars.css" ],
 	  "matches": [ "\u003Call_urls\u003E" ]
 	} ],
-	"description": "A simple scroll bar."
+	"description": "A simple scroll bar.",
+	"icons": { "16": "s16.png",
+           "48": "s48.png",
+          "128": "s128.png" }
 }
