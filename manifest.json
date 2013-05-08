@@ -1,0 +1,10 @@
+{
+	"manifest_version": 2,
+	"name": "Just a Scroll Bar",
+	"version": "0.1",
+	"content_scripts": [ {
+	  "css": [ "css/t-scroll-bars.css" ],
+	  "matches": [ "\u003Call_urls\u003E" ]
+	} ],
+	"description": "A simple scroll bar."
+}
