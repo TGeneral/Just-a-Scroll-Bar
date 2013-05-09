@@ -1,13 +1,23 @@
 {
 	"manifest_version": 2,
 	"name": "Just a Scroll Bar",
-	"version": "0.1",
+	"version": "0.2",
 	"content_scripts": [ {
-	  "css": [ "css/t-scroll-bars.css" ],
-	  "matches": [ "\u003Call_urls\u003E" ]
+		"all_frames": true,
+    	"js": [ "scrollbar.js" ],
+	  	"matches": [ "\u003Call_urls\u003E" ],
+	  	"run_at":  "document_start"
 	} ],
 	"description": "A simple scroll bar.",
+	"options_page": "options.html",
+	"background": {
+	    "scripts": ["background.js"]
+	},
 	"icons": { "16": "s16.png",
            "48": "s48.png",
-          "128": "s128.png" }
+          "128": "s128.png" }, 
+    "web_accessible_resources": [
+    	"css/t-scroll-bars.css",
+    	"css/t-scroll-bars-light.css"
+    	]
 }
