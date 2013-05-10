@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Just a Scroll Bar Extension Options</title>
-  </head>
-  <body>
-    <div>Scroll Bar Color:</div>
-    <select id="color">
-      <option value="Dark">Dark</option>
-      <option value="Light">Light</option>
-    </select>
-    <div>
-      <button id="save_button">Save</button>
-      <span id="save_status">Options saved</span>
-    </div>
+    <head>
+        <title>Just a Scroll Bar Extension Options</title>
+        <style type="text/css">
+            html, body{margin: 0;padding: 0;}
+            .main{
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #424242;
+                width: 600px;
+                border: none;
+                font-family: "Lucida Console", Monaco, monospace;
+                box-shadow: 0 0 10px #424242;
+                color: #E6E6E6;
+            }
+            .main .title{
+                color: #E6E6E6;
+                font-size: 24px;
+            }
+            .item{
+                margin: 5px;
+                background-color: #2E2E2E;
+            }
+            .item:hover{
+                box-shadow: 0 0 20px white;
+            }
+            .select{
+                box-shadow: 0 0 20px white;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="main">
+            <tr class="title"><td colspan="2">Just a Scroll Bar</td></tr>
+            <tr>
+                <td>
+                    <div id="light" class="item">
+                        <div>Light</div>
+                        <img alt="Light" src="img/light.png" />
+                    </div>
+                </td>
+                <td>
+                    <div id="dark" class="item">
+                        <div>Dark</div>
+                        <img alt="Dark" src="img/dark.png" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><span id="save_status"></span></td>
+            </tr>
+        </table>
     <script type="text/javascript" src="options.js"></script>
-  </body>
+    </body>
 </html>
