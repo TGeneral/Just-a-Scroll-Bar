@@ -23,11 +23,13 @@ function load_scroll_bar(){
   	});
 }
 
-var exclude = /(mail\.google\.com|chrome\.google\.com\/webstore|drive\.google\.com|google\.com\/calendar|omgubuntu\.co\.uk)/i
+var exclude = /(\.google\.com|omgubuntu\.co\.uk)/i;
+var except = /((www|play)\.google\.com)/i;
 
 function filter_url(url){
-	if (!exclude.test(url))
-		load_scroll_bar();
+	if (exclude.test(url) && !except.test(url))
+		return;
+	load_scroll_bar();
 }
 
 filter_url(document.URL);
