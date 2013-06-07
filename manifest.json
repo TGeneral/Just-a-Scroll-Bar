@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Just a Scroll Bar",
-	"version": "0.4",
+	"version": "0.5",
 	"content_scripts": [ {
 		"all_frames": true,
     	"js": [ "scrollbar.js" ],
@@ -15,9 +15,5 @@
 	},
 	"icons": { "16": "s16.png",
            "48": "s48.png",
-          "128": "s128.png" }, 
-    "web_accessible_resources": [
-    	"css/t-scroll-bars-dark.css",
-    	"css/t-scroll-bars-light.css"
-    	]
+          "128": "s128.png" }
 }

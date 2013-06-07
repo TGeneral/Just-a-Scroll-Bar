@@ -30,3 +30,5 @@ function restore_options() {
 document.addEventListener('DOMContentLoaded', restore_options);
 document.querySelector('#light').addEventListener('click',  function(){save_options("Light")});
 document.querySelector('#dark').addEventListener('click',  function(){save_options("Dark")});
+document.querySelector('#light-nr').addEventListener('click',  function(){save_options("Light-nr")});
+document.querySelector('#dark-nr').addEventListener('click',  function(){save_options("Dark-nr")});
